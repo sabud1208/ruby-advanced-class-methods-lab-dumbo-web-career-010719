@@ -51,7 +51,7 @@ end
 def self.new_from_filename(filename)
    binding.pry
  song = self.name
- song.name= (filename.split)
+ song.name= (filename.split[0])
 
 end
 
