@@ -43,7 +43,7 @@ def self.find_or_create_by_name(song_name)
 end
 
 def self.alphabetical
-  self.all
+  self.all.sort 
   binding.pry
 end
 end
