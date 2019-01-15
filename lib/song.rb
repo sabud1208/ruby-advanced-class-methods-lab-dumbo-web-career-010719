@@ -51,15 +51,20 @@ def self.alphabetical
 end
   
   
-def self.new_from_filename(filename)
-   binding.pry
-  song = self.new
-  song.artist_name= filename.split[0]
-  song.song_name = (filename.split[1].chomp("Come.mp3"))
-  @@all << song
-  song
-  
-end
-  
+def self.create_from_filename(filename)
+    parts = filename.split(" - ")
+    artist_name = parts[0]
+    song_name = parts[1].gsub(".mp3", "")
+
+    song = self.create
+    song.name = song_name
+    song.artist_name = artist_name
+    song
+  end
+
+  def self.destroy_all
+    self.all.clear
+  end
+
 
 end
