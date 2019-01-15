@@ -19,10 +19,7 @@ class Song
   song.save
   song
   end
-  
-  def name=(name)
-    @name = name
-  end
+
   
   def self.new_by_name(song_name)
     song = self.new
@@ -52,14 +49,15 @@ def self.alphabetical
   a.name
  end
 end
-
-def self.new_from_filename(name)
- song = self.name
- song.name= (name.split[0])
- song.artist_name(name.split[1].chomp(Come.mp3))
- @@all << song
- song
-
-end
+  
+  
+  def self.create_from_filename(name)
+    song = self.new
+    song.name = (name.split(" - ")[1].chomp(".mp3"))
+    song.artist_name = (name.split(" - ")[0])
+    @@all << song
+    song
+  end
+  
 
 end
