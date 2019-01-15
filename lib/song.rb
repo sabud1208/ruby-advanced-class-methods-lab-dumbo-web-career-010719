@@ -52,4 +52,6 @@ def self.new_from_filename(filename)
  @@all
  binding.pry
 end
+
+def.
 end
