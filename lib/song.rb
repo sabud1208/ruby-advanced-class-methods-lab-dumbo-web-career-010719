@@ -54,7 +54,7 @@ end
 def self.new_from_filename(filename)
    binding.pry
   title = filename.split("-")
-  song.name= filename[0]
+  song.name= title[0]
   
  
 end
