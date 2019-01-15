@@ -57,12 +57,12 @@ def self.new_from_filename(filename)
     song_name = parts[1].gsub(".mp3", "")
 end
 
-def self.create_from_filename(filename)
-    song = self.create
-    song.name = song_name
-    song.artist_name = artist_name
-    song
-  end
+# def self.create_from_filename(filename)
+#     song = self.create
+#     song.name = song_name
+#     song.artist_name = artist_name
+#     song
+#   end
 
   def self.destroy_all
     self.all.clear
