@@ -49,6 +49,7 @@ def self.alphabetical
 end
 
 def self.new_from_filename(song_name)
-  binding.pry
+ @@all
+ binding.pry
 end
 end
