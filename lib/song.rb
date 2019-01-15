@@ -53,8 +53,9 @@ end
   
 def self.new_from_filename(filename)
    binding.pry
-  title = filename.split("-")
-  artist_name= title[0]
+  
+  artist_name= filename.split[0]
+  
   
   
  
