@@ -49,7 +49,6 @@ def self.alphabetical
 end
 
 def self.new_from_filename(name)
-   binding.pry
  song = self.name
  song.name= (name.split[0])
  song.artist_name(name.split[1].chomp(Come.mp3))
