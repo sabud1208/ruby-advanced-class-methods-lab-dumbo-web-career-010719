@@ -51,8 +51,8 @@ end
 def self.new_from_filename(name)
    binding.pry
  song = self.name
- song.name= (filename.split[0])
- song.artist_name(filename.split[1].chomp(Come.mp3))
+ song.name= (name.split[0])
+ song.artist_name(name.split[1].chomp(Come.mp3))
  @@all << song
  song
 
