@@ -51,9 +51,9 @@ def self.alphabetical
 end
   
   
-def self.new_from_filename(song_name)
+def self.new_from_filename(filename)
    binding.pry
-  
+  title = filename.split
   
  
 end
