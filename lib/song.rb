@@ -55,8 +55,8 @@ def self.new_from_filename(filename)
    binding.pry
   
   artist_name= filename.split[0]
-  song_name = filename.split[1].chomp("Come.mp3")
-  
+  song_name = (filename.split[1].chomp("Come.mp3"))
+ 
 end
   
 
