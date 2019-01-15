@@ -56,6 +56,8 @@ def self.new_from_filename(filename)
   song = self.new
   song.artist_name= filename.split[0]
   song.song_name = (filename.split[1].chomp("Come.mp3"))
+  @@all << song
+  song
   
 end
   
