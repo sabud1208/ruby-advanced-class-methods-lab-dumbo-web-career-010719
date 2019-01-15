@@ -44,7 +44,7 @@ end
 
 def self.alphabetical
   self.all.sort_by do |a|
-  binding.pry
+  a.name
  end
 end
 end
