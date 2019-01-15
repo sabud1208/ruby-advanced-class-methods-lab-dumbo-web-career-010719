@@ -49,8 +49,8 @@ def self.alphabetical
 end
 
 def self.new_from_filename(filename)
- @@all
- binding.pry
+ song = self.name
+ song.name= (filename.split)
 end
 
 def.
