@@ -36,5 +36,5 @@ class Song
     @@all.find? do |song_name|
    binding.pry
     end
-
+end
 end
