@@ -36,6 +36,5 @@ class Song
     name
    binding.pry
     end
-   
-  end
+
 end
