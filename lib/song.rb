@@ -33,7 +33,9 @@ class Song
   
   
   def self.find_by_name
-    
+    self.find? do |x|
+      
+    end
    
   end
 end
