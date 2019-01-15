@@ -51,9 +51,11 @@ def self.alphabetical
 end
   
   
-def self.new_from_filename(song)
-  song
-  binding.pry
+def self.new_from_filename(song_name)
+   binding.pry
+  song = self.new
+  song.song_name
+ 
 end
   
 
