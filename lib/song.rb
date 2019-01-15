@@ -45,3 +45,4 @@ end
 def self.alphabetical
   self.all.alphabetical
 end
+end
